@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NJ Weapons Bill Tracker | ANJRPC</title>
+<meta name="description" content="ANJRPC's list of weapons bills in the New Jersey Legislature: sponsors, where each bill stands, and its chances of passing.">
+<style>html,body{margin:0;padding:0;background:#ffffff}</style>
+</head>
+<body>
+<!-- ===================================================================
+  ANJRPC — NJ Weapons Bill Tracker (2026-2027 Session)
+  Status as of November 17, 2026 · Source: NJ Legislature (njleg.state.nj.us)
+  Published by GitHub Pages from this file. The ANJRPC website shows this
+  page through an embed, so a change here appears there automatically.
+  To update a bill, edit its line in the BILLS list near the bottom.
+==================================================================== -->
+<div id="nj-bt">
+<style>
+#nj-bt{--ink:#1b1b1b;--muted:#5d5d5d;--line:#dcdcdc;--bg:#ffffff;--soft:#f6f6f4;--accent:#8b1a1a;
+  --hi:#1f6f3f;--hi-bg:#e4f3ea;--mod:#8a5a00;--mod-bg:#fbefd6;--lo:#555;--lo-bg:#ececec;
+  font-family:Georgia,"Times New Roman",serif;color:var(--ink);background:var(--bg);line-height:1.5;
+  max-width:1100px;margin:0 auto;padding:16px;box-sizing:border-box}
+#nj-bt *{box-sizing:border-box}
+#nj-bt h2{font-size:1.9em;margin:0 0 4px;line-height:1.2}
+#nj-bt .sub{color:var(--muted);margin:0 0 16px;font-size:.95em}
+#nj-bt .note{background:var(--soft);border-left:4px solid var(--accent);padding:12px 16px;margin:0 0 16px;font-size:.95em}
+#nj-bt .note p{margin:0 0 6px}#nj-bt .note p:last-child{margin:0}
+#nj-bt .alert{border-left-color:#b22222;background:#fbf3f3}
+#nj-bt .stats{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 16px}
+#nj-bt .stat{flex:1 1 150px;border:1px solid var(--line);border-radius:6px;padding:10px 12px}
+#nj-bt .stat b{display:block;font-size:1.6em;line-height:1.1}
+#nj-bt .stat span{color:var(--muted);font-size:.85em}
+#nj-bt .controls{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 12px;align-items:center}
+#nj-bt input,#nj-bt select{font:inherit;font-size:.95em;padding:8px 10px;border:1px solid #bbb;border-radius:5px;background:#fff;color:var(--ink)}
+#nj-bt input{flex:1 1 240px;min-width:0}
+#nj-bt .count{color:var(--muted);font-size:.9em;margin:0 0 8px}
+#nj-bt table{width:100%;border-collapse:collapse;font-size:.93em}
+#nj-bt th{text-align:left;background:var(--ink);color:#fff;padding:9px 10px;font-weight:normal;white-space:nowrap}
+#nj-bt td{padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
+#nj-bt tr:nth-child(even) td{background:#fafafa}
+#nj-bt .bills a{color:var(--accent);font-weight:bold;text-decoration:none;white-space:nowrap}
+#nj-bt .bills a:hover{text-decoration:underline}
+#nj-bt .title{font-weight:bold}
+#nj-bt .new{display:inline-block;background:#b22222;color:#fff;font-size:.72em;padding:1px 6px;border-radius:3px;margin-left:6px;vertical-align:middle;font-family:Arial,sans-serif}
+#nj-bt .moved{display:inline-block;background:var(--hi);color:#fff;font-size:.72em;padding:1px 6px;border-radius:3px;margin-left:6px;vertical-align:middle;font-family:Arial,sans-serif}
+#nj-bt .pill{display:inline-block;padding:2px 9px;border-radius:999px;font-size:.82em;font-family:Arial,sans-serif;white-space:nowrap}
+#nj-bt .p-Held{background:var(--hi);color:#fff}
+#nj-bt .p-Higher{background:var(--hi-bg);color:var(--hi)}
+#nj-bt .p-Moderate{background:var(--mod-bg);color:var(--mod)}
+#nj-bt .p-Low{background:var(--lo-bg);color:var(--lo)}
+#nj-bt .spons{color:var(--muted);font-size:.92em}
+#nj-bt .foot{color:var(--muted);font-size:.85em;margin-top:16px}
+#nj-bt .foot a{color:var(--accent)}
+@media (max-width:760px){
+  #nj-bt thead{display:none}
+  #nj-bt table,#nj-bt tbody,#nj-bt tr,#nj-bt td{display:block;width:100%}
+  #nj-bt tr{border:1px solid var(--line);border-radius:6px;margin:0 0 12px;padding:4px 0}
+  #nj-bt tr:nth-child(even) td{background:transparent}
+  #nj-bt td{border:0;padding:6px 12px}
+  #nj-bt td[data-l]::before{content:attr(data-l);display:block;font-size:.75em;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);font-family:Arial,sans-serif}
+}
+</style>
+
+<h2>NJ Weapons Bill Tracker</h2>
+<p class="sub">2026–2027 Legislative Session · Status as of <strong>November 17, 2026</strong> · Source: NJ Legislature (njleg.state.nj.us)</p>
+
+<div class="note alert">
+  <p><strong>Latest:</strong> S1800/A1411 (dealer disclosure on lost and stolen firearms) cleared Senate Law &amp; Public Safety on October 15 and could be posted for a Senate vote. Both houses hold voting sessions on <strong>December 17, 2026</strong>. Bill lists for those sessions haven't been announced yet.</p>
+  <p><strong>New:</strong> A5728/S4956 would add automatic voter registration to concealed carry permit applications.</p>
+</div>
+
+<div class="note">
+  <p><strong>How to read this list.</strong> "Hearing" estimates how likely a bill is to get a committee hearing. "Chance of passing" estimates how likely it is to become law this session. These are our estimates based on sponsors, leadership support and past sessions, not predictions from the Legislature.</p>
+  <p><strong>What you can do:</strong> Click a bill number to read the full text. Contact your State Senator and two Assembly members (look them up by town on <a href="https://www.njleg.state.nj.us/" target="_blank" rel="noopener">njleg.state.nj.us</a>). When a bill is posted for a hearing, you can register your position or submit written testimony through the committee's Registration Form on njleg.gov, or attend in person in Trenton.</p>
+</div>
+
+<div class="stats" id="nj-bt-stats"></div>
+
+<div class="controls">
+  <input id="nj-bt-q" type="search" placeholder="Search bill number, topic, or sponsor…" aria-label="Search bills">
+  <select id="nj-bt-law" aria-label="Filter by chance of passing">
+    <option value="">All chances of passing</option>
+    <option value="Moderate">Moderate chance</option>
+    <option value="Low">Low chance</option>
+  </select>
+  <select id="nj-bt-com" aria-label="Filter by committee">
+    <option value="">All committees</option>
+  </select>
+</div>
+<p class="count" id="nj-bt-count"></p>
+
+<table>
+  <thead><tr><th>Bill(s)</th><th>What it does</th><th>Sponsors</th><th>Where it is now</th><th>Hearing</th><th>Chance of passing</th></tr></thead>
+  <tbody id="nj-bt-body"></tbody>
+</table>
+
+<p class="foot">Bill status comes from the official NJ Legislature website. Committee schedules change often; check <a href="https://www.njleg.state.nj.us/" target="_blank" rel="noopener">njleg.state.nj.us</a> before traveling to a hearing. Party and district shown as (D-##) or (R-##).</p>
+
+<script>
+(function(){
+/* One bill group per line:  Bills | Title | Sponsors | Where it is now | Hearing | Chance of passing | flag
+   Hearing: Held, Higher, Moderate, Low.  Chance: Moderate, Low.  Flag (optional): new or moved */
+var BILLS = `
+S1800 / A1411 | Dealer disclosure on lost and stolen firearms | Sen. Troy Singleton (D-7); Asm. Ellen Park (D-37), Asm. Alixon Collazos-Gill (D-27), Asm. Michael Venezia (D-34) | Approved with amendments by Senate Law & Public Safety on Oct. 15, 2026. Awaiting a Senate floor vote (2nd reading). Assembly bill in Assembly Judiciary. | Held | Moderate | moved
+S2309 / A442 | Revise the assault weapons definition | Sen. John McKeon (D-27); Asm. Michael Venezia (D-34) | Senate Law & Public Safety; Assembly Judiciary | Higher | Moderate
+S1433 / A3560 | Safe Storage of Firearms Act | Sen. Joseph Cryan (D-20); Asm. Louis Greenwald (D-6, Majority Leader), Asm. Michael Venezia (D-34), with 7 Democratic co-sponsors | Senate Law & Public Safety; Assembly Judiciary | Higher | Moderate
+S4069 / A4738 | New Jersey Home Safety Act (firearm storage) | Sen. Joseph Cryan (D-20); Asm. Louis Greenwald (D-6, Majority Leader), Asm. Michael Venezia (D-34) | Senate Law & Public Safety; Assembly Judiciary | Higher | Moderate
+S1654 / A1481 | Raise the long-gun purchase age to 21 | Sen. Andrew Zwicker (D-16); Asm. Roy Freiman (D-16), with 14 Democratic co-sponsors | Senate Law & Public Safety; Assembly Judiciary | Higher | Moderate
+S3001 / A2117 | Firearm merchant code for card payments | Sen. Joseph Vitale (D-19), with 2 Democratic co-sponsors; Asm. Linda Carter (D-22) | Senate Law & Public Safety; Assembly Judiciary | Higher | Moderate
+S3147 | Body armor registration and purchase permits | Sen. Nicholas Scutari (D-22, Senate President); Sen. Joseph Cryan (D-20) | Senate Law & Public Safety | Higher | Moderate
+A3536 | Handgun purchase wait after failing to report a theft | Asm. Louis Greenwald (D-6, Majority Leader) | Assembly Judiciary | Higher | Moderate
+S4074 / A2008 | Ammunition and parts in domestic violence cases | Sen. Andrew Zwicker (D-16); Asm. Shama Haider (D-37), Asm. Ellen Park (D-37) | Senate Law & Public Safety; Assembly Judiciary | Higher | Moderate
+A3550 | Domestic violence and firearms revisions | Asm. Louis Greenwald (D-6, Majority Leader), Asm. Joe Danielsen (D-17), with 4 Democratic co-sponsors | Assembly Judiciary | Higher | Moderate
+SJR42 / AJR130 | Gun Violence Awareness Month | Sen. Troy Singleton (D-7), Sen. Angela McKnight (D-31), with 3 Democratic co-sponsors; Asm. Carol Murphy (D-7), Asm. Annette Quijano (D-20) | Senate Law & Public Safety; Assembly Judiciary | Higher | Moderate
+S1871 / A2960 | Reasonable stops while transporting firearms | Sen. Latham Tiver (R-8); Asm. Erik Peterson (R-23), Asm. Joe Danielsen (D-17), Asm. Dawn Fantasia (R-24), with 6 Republican co-sponsors | Senate Law & Public Safety; Assembly Public Safety | Moderate | Low
+S2311 | ID cards expire every four years; training required | Sen. John McKeon (D-27), with 2 Democratic co-sponsors | Senate Law & Public Safety | Moderate | Low
+S2306 | Tax on firearms and ammunition sales | Sen. John McKeon (D-27) | Senate Law & Public Safety | Moderate | Low
+S2307 | Increase firearm permit fees | Sen. John McKeon (D-27) | Senate Law & Public Safety | Moderate | Low
+S2312 | Limit where firearm dealers can locate | Sen. John McKeon (D-27) | Senate Law & Public Safety | Moderate | Low
+S1517 / A4737 | License and fee for firearm manufacturers | Sen. Joseph Cryan (D-20); Asm. Ellen Park (D-37) | Senate Law & Public Safety; Assembly Judiciary | Moderate | Low
+S3347 | Gun-free and weapon-free zones | Sen. Shirley Turner (D-15) | Senate Law & Public Safety | Moderate | Low
+S2097 | Binary triggers | Sen. Paul Moriarty (D-4) | Senate Judiciary | Moderate | Low
+A960 | Family firearm transfers through a dealer | Asm. Carol Murphy (D-7) | Assembly Judiciary | Moderate | Low
+A987 | Background checks on a buyer's household | Asm. Carol Murphy (D-7) | Assembly Judiciary | Moderate | Low
+S4225 / A5021 | Non-lead ammunition for hunting | Sen. Andrew Zwicker (D-16), Sen. Britnee Timberlake (D-34), with 2 Democratic co-sponsors; Asm. Ellen Park (D-37), Asm. Michael Venezia (D-34) | Senate Environment & Energy; Assembly Environment | Moderate | Low
+S1722 / A4606 | Veterans exempt from live-fire part of hunter safety | Sen. Parker Space (R-24); Asm. Carol Murphy (D-7) | Senate Military & Veterans' Affairs; Assembly Agriculture | Moderate | Low
+S1357 / A446 | Child-access law to age 18; police follow-up | Sen. Joseph Lagana (D-38), Sen. Linda Greenstein (D-14); Asm. Michael Venezia (D-34) | Senate Law & Public Safety; Assembly Judiciary | Moderate | Low
+S2313 / A3044 | Strict liability when a minor gets a loaded firearm | Sen. John McKeon (D-27); Asm. Chris Tully (D-38) | Senate Law & Public Safety; Assembly Judiciary | Moderate | Low
+S2352 / A2565 | Child-access and "community gun" changes | Sen. John McKeon (D-27), Sen. Renee Burgess (D-28); Asm. Rosaura Bagolie (D-27) | Senate Law & Public Safety; Assembly Judiciary | Moderate | Low
+S2589 | Screening for applicants aged 18 to 25 | Sen. Vin Gopal (D-11) | Senate Law & Public Safety | Moderate | Low
+A1369 | Firearms as raffle prizes | Asm. Ellen Park (D-37) | Assembly Tourism, Gaming & the Arts | Moderate | Low
+S2283 | Pension investments in firearm makers | Sen. John McKeon (D-27) | Senate State Government | Moderate | Low
+S1492 | Ammunition vending machines | Sen. Joseph Cryan (D-20), with 1 Democratic co-sponsor | Senate Law & Public Safety | Moderate | Low
+S1678 / A1410 | Firearm and Ammunition Procurement Act | Sen. Andrew Zwicker (D-16); Asm. Ellen Park (D-37), Asm. Al Abdelaziz (D-35), Asm. Linda Carter (D-22) | Senate State Government; Assembly Judiciary | Moderate | Low
+ACR72 / ACR124 | Resolutions on federal gun legislation | Asm. Linda Carter (D-22), Asm. James Kennedy (D-22); Asm. Louis Greenwald (D-6, Majority Leader) | Assembly Judiciary; Assembly Oversight | Moderate | Low
+S425 / A1137 | Firearm liability insurance as a policy option | Sen. Brian Stack (D-33); Asm. Joe Danielsen (D-17), with 1 Democratic co-sponsor | Senate Commerce; Assembly Judiciary | Moderate | Low
+S1293 / A1425 | Criminal trespass while carrying a firearm | Sen. Linda Greenstein (D-14); Asm. Ellen Park (D-37) | Senate Law & Public Safety; Assembly Judiciary | Moderate | Low
+S2281 / A2528 | Firearms at public demonstrations | Sen. John McKeon (D-27); Asm. Rosaura Bagolie (D-27) | Senate Judiciary; Assembly Judiciary | Moderate | Low
+S2111 | Notice before mental health record expungement | Sen. Paul Moriarty (D-4) | Senate Law & Public Safety | Moderate | Low
+S1292 / A1075 | Where permit fees are deposited | Sen. Linda Greenstein (D-14); Asm. Michael Venezia (D-34) | Senate Law & Public Safety; Assembly Judiciary | Moderate | Low
+S2351 / A1024 | Notice of prohibited purchase attempts | Sen. John McKeon (D-27), Sen. Renee Burgess (D-28); Asm. Balvir Singh (D-7), Asm. Michael Venezia (D-34), with 4 Democratic co-sponsors | Senate Law & Public Safety; Assembly Public Safety | Moderate | Low
+S2750 / A1376 | Gun buybacks and ammunition surrender | Sen. Gordon Johnson (D-37), Sen. Patrick Diegnan (D-18); Asm. Ellen Park (D-37) | Senate Law & Public Safety; Assembly Judiciary | Moderate | Low
+S1494 | Firearm storage grant program | Sen. Joseph Cryan (D-20) | Senate Law & Public Safety | Moderate | Low
+S1495 | Dealer liability protection for suicide prevention | Sen. Joseph Cryan (D-20) | Senate Law & Public Safety | Moderate | Low
+S1488 | Nonlethal weapons pilot program | Sen. Joseph Cryan (D-20) | Senate Law & Public Safety | Moderate | Low
+S206 / S3953 | Firearm lock boxes in ambulances | Sen. Patrick Diegnan (D-18), Sen. Anthony Bucco (R-25) | Senate Law & Public Safety | Moderate | Low
+A3920 | Notice to new residents about banned weapons | Asm. Robert Karabinchak (D-18), Asm. Joe Danielsen (D-17) | Assembly Judiciary | Moderate | Low
+S52 | Penalties when a minor's access causes injury | Sen. James Holzapfel (R-10), Sen. Anthony Bucco (R-25), with 1 Democratic and 1 Republican co-sponsor | Senate Law & Public Safety | Moderate | Low
+S3232 | Firearm manufacturing crimes | Sen. Shirley Turner (D-15) | Senate Law & Public Safety | Moderate | Low
+S3230 / S456 | Pretrial detention for firearm offenses | Sen. Shirley Turner (D-15); Sen. Brian Stack (D-33) | Senate Law & Public Safety; Senate Judiciary | Moderate | Low
+S2903 / A2590 | MarcAnthony's Law | Sen. Raj Mukherji (D-32); Asm. Carmen Morales (D-34) | Senate Judiciary; Assembly Judiciary | Moderate | Low
+S993 / A1385 / A4394 | Firearm theft penalties | Sen. Jon Bramnick (R-21); Asm. Ellen Park (D-37); Asm. Jay Webber (R-26) | Senate Law & Public Safety; Assembly Judiciary | Moderate | Low
+S4145 / A1924 | Drones equipped with weapons | Sen. Joseph Cryan (D-20); Asm. Annette Quijano (D-20), Asm. Jay Webber (R-26) | Senate Law & Public Safety; Assembly Judiciary | Moderate | Low
+A2211 / A3239 / A485 | Firearm offenses: juveniles, plea deals, risk assessment | Asm. Shanique Speight (D-29); Asm. Dan Hutchison (D-4), with 8 co-sponsors; Asm. Gabriel Rodriguez (D-33) | Assembly Community Development; Assembly Public Safety | Moderate | Low
+A2553 | Police training on machine gun conversion devices | Asm. Rosaura Bagolie (D-27), Asm. Mitchelle Drulis (D-16), Asm. Tennille McCoy (D-14), with 4 Democratic co-sponsors | Assembly Judiciary | Moderate | Low
+S3060 / S3542 | Gun Court pilot programs | Sen. Benjie Wimberly (D-35); Sen. Shirley Turner (D-15) | Senate Judiciary | Moderate | Low
+S4236 / A4918 / S2793 / A5304 | School violence prevention and mentoring grants | Sen. Benjie Wimberly (D-35); Sen. Angela McKnight (D-31); Asm. Kenyatta Stewart (D-35); Asm. Verlina Reynolds-Jackson (D-15) | Senate Education; Assembly Education | Moderate | Low
+A2872 | Annual qualification for retired officers | Asm. Alex Sauickie (R-12), Asm. Carol Murphy (D-7) | Assembly Judiciary | Moderate | Low
+S2380 / A1888 / A1896 / A1825 | Special officers and State agents carrying firearms | Sen. Anthony Bucco (R-25); Asm. Cleopatra Tucker (D-28); Asm. Anthony Verrelli (D-15) | Senate Law & Public Safety; Assembly Public Safety | Moderate | Low
+S2526 / A192 / S1468 / A2871 | Officers carrying in schools and on campus | Sen. Declan O'Scanlon (R-13); Asm. Dawn Fantasia (R-24); Sen. Joseph Cryan (D-20); Asm. Alex Sauickie (R-12) | Senate Law & Public Safety; Assembly Education; Assembly Higher Education | Moderate | Low
+A5728 / S4956 | Automatic voter registration with concealed carry permit applications | Asm. Gregory Myhre (R-9), Asm. Brian Rumpf (R-9), with 3 co-sponsors; Sen. Carmen Amato (R-9), Sen. Douglas Steinhardt (R-23) | A5728 introduced Oct. 29, 2026 and sent to Assembly Judiciary. S4956 in the Senate. | Low | Low | new
+S3972 / A5128 | Remove the magazine capacity limit | Sen. Parker Space (R-24); Asm. Dawn Fantasia (R-24) | Senate Law & Public Safety; Assembly Judiciary | Low | Low
+S3975 / A4610 | End the one-handgun-a-month limit | Sen. Parker Space (R-24); Asm. Dawn Fantasia (R-24) | Senate Law & Public Safety; Assembly Judiciary | Low | Low
+A867 | Stand Your Ground self-defense law | Asm. Gerry Scharfenberger (R-13); Asm. Erik Peterson (R-23) | Assembly Judiciary | Low | Low
+ACR14 | State constitutional right to keep and bear arms | Asm. Dawn Fantasia (R-24); Asm. Michael Inganamort (R-24) | Assembly Judiciary | Low | Low
+S1719 / A1175 | BB guns are not firearms | Sen. Parker Space (R-24); Asm. John DiMaio (R-23), with 4 Republican co-sponsors | Senate Law & Public Safety; Assembly Public Safety | Low | Low
+S1707 / A3227 | County sheriffs may issue firearm permits | Sen. Parker Space (R-24); Asm. Jay Webber (R-26), Asm. Dawn Fantasia (R-24) | Senate Law & Public Safety; Assembly Judiciary | Low | Low
+S1898 | Carry for honorably discharged veterans | Sen. Latham Tiver (R-8) | Senate Law & Public Safety | Low | Low
+A4814 | No mandatory gun insurance or microstamping; repeal smart-gun law | Asm. Dawn Fantasia (R-24) | Assembly Judiciary | Low | Low
+S1705 / A1251 | No separate card-payment code for firearm sellers | Sen. Parker Space (R-24); Asm. Michael Inganamort (R-24), Asm. Dawn Fantasia (R-24) | Senate Law & Public Safety; Assembly Public Safety | Low | Low
+A2956 | Burden of proof in permit denials | Asm. Erik Peterson (R-23), Asm. Jay Webber (R-26), Asm. Dawn Fantasia (R-24) | Assembly Public Safety | Low | Low
+A3141 | Part-time police chiefs may issue permits | Asm. Jay Webber (R-26), with 3 Republican co-sponsors | Assembly Public Safety | Low | Low
+A1220 | Define reasonable stops during firearm transport | Asm. Michael Inganamort (R-24), Asm. Dawn Fantasia (R-24) | Assembly Judiciary | Low | Low
+A1250 | Slingshots | Asm. Michael Inganamort (R-24), Asm. Dawn Fantasia (R-24) | Assembly Public Safety | Low | Low
+S937 / A1448 | Active-duty military may carry at all times | Sen. Michael Testa (R-1), Sen. Douglas Steinhardt (R-23); Asm. Erik Simonsen (R-1) | Senate Law & Public Safety; Assembly Military & Veterans' Affairs | Low | Low
+A636 | Permit fee waiver for veterans | Asm. Brian Bergen (R-26), with 2 Republican co-sponsors | Assembly Military & Veterans' Affairs | Low | Low
+A260 | Free permit training for lower-income applicants | Asm. Paul Kanitra (R-10) | Assembly Judiciary | Low | Low
+A161 | Firearm displays at charity fundraisers | Asm. Dawn Fantasia (R-24), Asm. Michael Inganamort (R-24) | Assembly Judiciary | Low | Low
+A4403 | Public access to permit-processing guidelines | Asm. Jay Webber (R-26) | Assembly Judiciary | Low | Low
+A222 / S3414 | Public reporting on permit approvals and denials | Asm. Dawn Fantasia (R-24), Asm. Robert Auth (R-39), with 9 Republican co-sponsors; Sen. James Holzapfel (R-10), Sen. Declan O'Scanlon (R-13) | Assembly Public Safety; Senate Law & Public Safety | Low | Low
+A172 / S1704 / A511 / S1860 | Faster permits for domestic violence victims | Asm. Dawn Fantasia (R-24), Asm. Michael Inganamort (R-24), Asm. Robert Auth (R-39); Sen. Parker Space (R-24), Sen. Latham Tiver (R-8) | Assembly Judiciary; Senate Judiciary | Low | Low
+S1699 / A164 | Sunday deer hunting with firearms | Sen. Parker Space (R-24), Sen. Anthony Bucco (R-25); Asm. Dawn Fantasia (R-24), Asm. Michael Inganamort (R-24) | Senate Economic Growth; Assembly Agriculture | Low | Low
+S1706 / A184 | Second Amendment license plates | Sen. Parker Space (R-24); Asm. Dawn Fantasia (R-24), Asm. Robert Auth (R-39) | Senate Transportation; Assembly Transportation | Low | Low
+SR13 | Resolution on national concealed carry reciprocity | Sen. Douglas Steinhardt (R-23), Sen. Parker Space (R-24) | Senate Law & Public Safety | Low | Low
+SCR14 / ACR148 | Resolution on interstate firearm transport | Sen. Douglas Steinhardt (R-23), Sen. Parker Space (R-24); Asm. Dawn Fantasia (R-24) | Senate Law & Public Safety; Assembly Oversight | Low | Low
+S1324 / A1233 | No age cap on retired officer carry permits | Sen. Joseph Pennacchio (R-26); Asm. Michael Inganamort (R-24), Asm. Dawn Fantasia (R-24) | Senate Law & Public Safety; Assembly Judiciary | Low | Low
+A1569 | Terrorist watchlist and firearm permits | Asm. Sean Kean (R-30) | Assembly Public Safety | Low | Low
+S1018 | Voluntary do-not-sell registry | Sen. Jon Bramnick (R-21) | Senate Law & Public Safety | Low | Low
+S903 / A3168 | Immigration notice for non-citizen applicants | Sen. Michael Testa (R-1); Asm. Jay Webber (R-26), with 5 Republican co-sponsors | Senate Law & Public Safety; Assembly Oversight | Low | Low
+A572 | Elected officials carrying firearms | Asm. Robert Auth (R-39), Asm. Gregory Myhre (R-9), with 1 Republican co-sponsor | Assembly Judiciary | Low | Low
+A4412 | Tax deduction for officers' firearms training | Asm. Jay Webber (R-26), with 2 Republican co-sponsors | Assembly Public Safety | Low | Low
+`;
+var YEAR = "2026";
+var HLABEL = {Held:"Hearing held", Higher:"Likely", Moderate:"Possible", Low:"Unlikely"};
+var LLABEL = {Moderate:"Moderate", Low:"Low"};
+
+var rows = BILLS.trim().split("\n").map(function(l){
+  var p = l.split("|").map(function(s){return s.trim();});
+  return {bills:p[0].split("/").map(function(s){return s.trim();}), title:p[1], spons:p[2], stage:p[3], hearing:p[4], law:p[5], flag:p[6]||""};
+});
+
+function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+var $ = function(id){return document.getElementById(id);};
+
+/* committee filter options */
+var coms = {};
+rows.forEach(function(r){
+  r.stage.split(/[;.]/).forEach(function(c){
+    var m = c.match(/(Senate|Assembly) [A-Z][A-Za-z,'& ]+/);
+    if(m){var n=m[0].replace(/ (Committee|on).*$/,"").trim(); if(!/introduced|floor|bill|in the Senate/i.test(n)) coms[n]=1;}
+  });
+});
+Object.keys(coms).sort().forEach(function(c){var o=document.createElement("option");o.value=c;o.textContent=c;$("nj-bt-com").appendChild(o);});
+
+/* stats */
+var nBills = rows.reduce(function(a,r){return a+r.bills.length;},0);
+var nMod = rows.filter(function(r){return r.law==="Moderate";}).length;
+var nMoved = rows.filter(function(r){return r.hearing==="Held";}).length;
+$("nj-bt-stats").innerHTML =
+  '<div class="stat"><b>'+nBills+'</b><span>bills tracked</span></div>'+
+  '<div class="stat"><b>'+rows.length+'</b><span>proposals (companion bills grouped)</span></div>'+
+  '<div class="stat"><b>'+nMoved+'</b><span>cleared a committee</span></div>'+
+  '<div class="stat"><b>'+nMod+'</b><span>with a moderate chance of passing</span></div>';
+
+function render(){
+  var q = $("nj-bt-q").value.toLowerCase().trim(), law=$("nj-bt-law").value, com=$("nj-bt-com").value;
+  var out = rows.filter(function(r){
+    if(law && r.law!==law) return false;
+    if(com && r.stage.indexOf(com)<0) return false;
+    if(q){var hay=(r.bills.join(" ")+" "+r.title+" "+r.spons+" "+r.stage).toLowerCase(); if(hay.indexOf(q.replace(/\s+/g,""))<0 && hay.indexOf(q)<0) return false;}
+    return true;
+  });
+  $("nj-bt-count").textContent = "Showing "+out.length+" of "+rows.length+" proposals";
+  $("nj-bt-body").innerHTML = out.map(function(r){
+    var links = r.bills.map(function(b){return '<a href="https://www.njleg.state.nj.us/bill-search/'+YEAR+'/'+b+'" target="_blank" rel="noopener">'+b+'</a>';}).join(" / ");
+    var tag = r.flag==="new"?'<span class="new">NEW</span>':r.flag==="moved"?'<span class="moved">MOVED</span>':"";
+    return '<tr><td class="bills" data-l="Bill(s)">'+links+'</td>'+
+      '<td data-l="What it does"><span class="title">'+esc(r.title)+'</span>'+tag+'</td>'+
+      '<td class="spons" data-l="Sponsors">'+esc(r.spons)+'</td>'+
+      '<td data-l="Where it is now">'+esc(r.stage)+'</td>'+
+      '<td data-l="Hearing"><span class="pill p-'+r.hearing+'">'+HLABEL[r.hearing]+'</span></td>'+
+      '<td data-l="Chance of passing"><span class="pill p-'+r.law+'">'+LLABEL[r.law]+'</span></td></tr>';
+  }).join("");
+}
+["nj-bt-q","nj-bt-law","nj-bt-com"].forEach(function(id){$(id).addEventListener("input",render);});
+render();
+})();
+</script>
+</div>
+</body>
+</html>
